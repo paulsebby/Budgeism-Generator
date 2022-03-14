@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+      h3 {
+        font-size: 80px;
+      }
+      button {
+        font-size: 80px;
+        width: 80%;
+        top: 300px;
+      }
+    </style>
+  </head>
+<body>
+
+
+ <center> <h3 id="header3"> Click Button Below</h3> </center>
+
+<center> <button type="button" onclick='bigBudgeismFunc();'>Click For New Budgeism</button> </center>
+
+<script>
+  
+  function clickThis(answer) {
+    document.getElementById("header3").innerHTML = answer;
+  }
+  
+      var budgeismList = ["Who's winded?","As the kids say","Straight up","Learning is occuring","Been there done that bought the t-shirt", "You know you show, you no show you no know","Slope of the tangent line","Studies show, you can't see what you don't look at","Show respect, you wouldn't call your parents by their first names so add the Y'","It's crazy how something so small can control so much of your life","You know one thing you can never get back? Time.","You know?","Highlight reel","Sicko Mode","If you're not watching, you're not seeing","Review fun and games initiative", "Nerd Alert","Turning in homework outstanding is outstanding","Zeros are just reminders","F.R.F.G.I.","Rad day","When people dont listen, they dont hear", "Dangerously close/dangerously similar", "Dad joeks"];
+
+      function getRandom(lengthNum) {
+        return Math.floor(Math.random() * lengthNum);
+      }
+      function budgeismListSelector(randomNum) {
+        return budgeismList[randomNum];
+      }
+       function bigBudgeismFunc() {
+         var randomNumber = getRandom(budgeismList.length);
+         var answer = budgeismListSelector(randomNumber);
+         //console.log((answer));
+         clickThis(answer);
+      }
+</script>
+</body>
+</html>
