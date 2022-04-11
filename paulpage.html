@@ -2,9 +2,21 @@
 <html>
   <head>
     <style>
-body {
-    background-image: url('https://budgeisms.me/me%20cropped.gif');
-}
+
+  @keyframes example {
+      from {background-color: red;}
+      to {background-color: yellow;}
+  }
+
+  div {
+      width: 100px;
+      height: 100px;
+      background-image: url('https://budgeisms.me/me%20cropped.gif');
+      animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
     </style>
   </head>
 <body>
