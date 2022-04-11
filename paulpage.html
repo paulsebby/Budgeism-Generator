@@ -4,13 +4,15 @@
     <style>
 
  @keyframes spin {
-   from {background-color: red;}
-   to {background-color: green;}
     from {
         transform: rotate(0deg);
     } to {
         transform: rotate(36000000deg);
     }
+}
+@keyfreames color {
+  from {background-color: red;}
+  to {background-color: green;}
 }
 
   img {
@@ -20,6 +22,8 @@
       animation-duration: 40000s;
       animation-iteration-count: infinite;
       animation-direction: alternate;
+
+    animation: color 4s infinite alternate;
   }
     </style>
   </head>
