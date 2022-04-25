@@ -3,6 +3,14 @@
   <head>
     <style>
 
+      @keyframes moveit {
+    from { transform : translateX(-200em) } /* slide down from off-screen */
+    to   { transform : translateX(center) }
+}
+  img {
+      animation-name: moveit;
+      animation-duration: 5s;
+  }
       h3 {
         font-size: 80px;
       }
