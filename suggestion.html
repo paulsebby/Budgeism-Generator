@@ -11,7 +11,12 @@
 <center> <h1> Have suggestions for new Budgeisms? </h1> </center>
 
   <center><input type="text" id="ralph"> 
-  <button type="button" onclick=""> Enter </button> </center>
-  
+  <button type="button" onclick="toFile()"> Enter </button> </center>
+   <script>
+     function toFile() {
+      String(newism = document.getElementById("ralph").value);
+       writeFile("newsuggestions.txt", newism, void);
+     }
+   </script>
 </body>
 </html>
