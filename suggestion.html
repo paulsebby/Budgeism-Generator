@@ -12,10 +12,12 @@
 
   <center><input type="text" id="ralph"> 
   <button type="button" onclick="toFile()"> Enter </button> </center>
+  <center> <h2 id="james">  </h2></center>
    <script>
      function toFile() {
       String(newism = document.getElementById("ralph").value);
        writeFile("newsuggestions.txt", newism, void);
+       document.getElementById("james").innerHTML = "You have successfully entered " + ralph + "!";
      }
    </script>
 </body>
