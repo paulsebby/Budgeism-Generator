@@ -16,7 +16,18 @@
    <script>
      function toFile() {
       newism = document.getElementById("ralph").value;
-       writeFile("newsuggestions.txt", newism, void);
+       
+       const fs = require('fs')
+  
+// Data which will write in a file.
+      let data = newism
+  
+// Write data in 'Output.txt' .
+      fs.writeFile('newsuggestions.txt', data, (err) => {
+      
+    // In case of a error throw err.
+    if (err) throw err;
+      })
        document.getElementById("james").innerHTML = "You have successfully entered " + ralph + "!";
      }
    </script>
