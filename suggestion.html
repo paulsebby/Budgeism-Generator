@@ -11,25 +11,17 @@
 <center> <h1> Have suggestions for new Budgeisms? </h1> </center>
 
   <center><input type="text" id="ralph"> 
-  <button type="button" onclick="toFile();"> Enter </button> </center>
-  <center> <h2 id="james"> l </h2></center>
+  <button type="button" id="daniel" onclick="toFile();"> Enter </button> </center>
+  <center> <h2 id="james"> this is still a work in progress and does not work yet </h2></center>
    <script>
      function toFile() {
-      newism = document.getElementById("ralph").value;
-       
-       const fs = require('fs')
-  
-// Data which will write in a file.
-      let data = newism
-  
-// Write data in 'Output.txt' .
-      fs.writeFile('newsuggestions.txt', data, (err) => {
+            var newism = document.getElementById("ralph").value;
       
-    // In case of a error throw err.
-    if (err) throw err;
-      })
-       document.getElementById("james").innerHTML = "You have successfully entered " + ralph + "!";
+          var goodIdeas = [];
+       goodIdeas.push(newism);
+            document.getElementById("james").innerHTML = ("You have successfully entered " + newism + "!");
      }
+     
    </script>
 </body>
 </html>
